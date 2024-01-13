@@ -31,7 +31,7 @@ jobs:
         with:
           ref: dev
       - name: Run pkgcheck
-        uses: pkgcore/pkgcheck-action@v1
+        uses: pkgcore/pkgcheck-action@dev
         with:
           args: --keywords=-RedundantVersion,-NonsolvableDepsInDev
       - name: Inform failure on IRC
